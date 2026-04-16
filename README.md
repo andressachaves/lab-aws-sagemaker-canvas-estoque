@@ -1,47 +1,69 @@
-# 📊 Previsão de Estoque Inteligente na AWS com [SageMaker Canvas](https://aws.amazon.com/pt/sagemaker/canvas/)
+# 📊 Previsão de Estoque Inteligente com AWS SageMaker Canvas
 
-Bem-vindo ao desafio de projeto "Previsão de Estoque Inteligente na AWS com SageMaker Canvas. Neste Lab DIO, você aprenderá a usar o SageMaker Canvas para criar previsões de estoque baseadas em Machine Learning (ML). Siga os passos abaixo para completar o desafio!
+Projeto de Machine Learning desenvolvido na plataforma AWS SageMaker Canvas para previsão inteligente de estoque, utilizando modelos de ML sem necessidade de código.
+
+## 🎯 Objetivo
+
+Criar um modelo preditivo de estoque utilizando o SageMaker Canvas da AWS, demonstrando como aplicar Machine Learning de forma acessível (no-code/low-code) para resolver problemas reais de gestão de inventário.
+
+## 🛠️ Tecnologias
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![SageMaker](https://img.shields.io/badge/SageMaker_Canvas-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-No--Code-blue?style=for-the-badge)
 
 ## 📋 Pré-requisitos
 
-Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda para criar sua conta, confira nosso repositório [AWS Cloud Quickstart](https://github.com/digitalinnovationone/aws-cloud-quickstart).
+- Conta ativa na AWS
+- Acesso ao SageMaker Canvas
+- Dataset de estoque (disponível na pasta `/datasets`)
 
-
-## 🎯 Objetivos Deste Desafio de Projeto (Lab)
-
-![image](https://github.com/digitalinnovationone/lab-aws-sagemaker-canvas-estoque/assets/730492/72f5c21f-5562-491e-aa42-2885a3184650)
-
-- Dê um fork neste projeto e reescreva este `README.md`. Sinta-se à vontade para detalhar todo o processo de criação do seu Modelo de ML para uma "Previsão de Estoque Inteligente".
-- Para isso, siga o [passo a passo] descrito a seguir e evolua as suas habilidades em ML no-code com o Amazon SageMaker Canvas.
-- Ao concluir, envie a URL do seu repositório com a solução na plataforma da DIO.
-
+> 💡 Não tem conta AWS? Crie gratuitamente em [aws.amazon.com](https://aws.amazon.com/free)
 
 ## 🚀 Passo a Passo
 
-### 1. Selecionar Dataset
+### 1. Configurar o SageMaker Canvas
+```
+AWS Console → SageMaker → Canvas → Abrir SageMaker Canvas
+```
 
--   Navegue até a pasta `datasets` deste repositório. Esta pasta contém os datasets que você poderá escolher para treinar e testar seu modelo de ML. Sinta-se à vontade para gerar/enriquecer seus próprios datasets, quanto mais você se engajar, mais relevante esse projeto será em seu portfólio.
--   Escolha o dataset que você usará para treinar seu modelo de previsão de estoque.
--   Faça o upload do dataset no SageMaker Canvas.
+### 2. Importar os Dados
+- Acesse a aba **Datasets**
+- Faça upload do arquivo da pasta `/datasets`
+- Aguarde o processamento
 
-### 2. Construir/Treinar
+### 3. Criar o Modelo
+- Clique em **New Model**
+- Selecione o dataset importado
+- Escolha a coluna alvo (quantidade em estoque)
+- Clique em **Quick Build**
 
--   No SageMaker Canvas, importe o dataset que você selecionou.
--   Configure as variáveis de entrada e saída de acordo com os dados.
--   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
+### 4. Analisar as Previsões
+- Avalie as métricas do modelo (RMSE, MAPE)
+- Gere previsões para períodos futuros
+- Exporte os resultados
 
-### 3. Analisar
+## 📁 Estrutura do Projeto
 
--   Após o treinamento, examine as métricas de performance do modelo.
--   Verifique as principais características que influenciam as previsões.
--   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
+```
+lab-aws-sagemaker-canvas-estoque/
+├── datasets/         # Dados para treinamento do modelo
+└── README.md
+```
 
-### 4. Prever
+## 📈 Resultados
 
--   Use o modelo treinado para fazer previsões de estoque.
--   Exporte os resultados e analise as previsões geradas.
--   Documente suas conclusões e qualquer insight obtido a partir das previsões.
+O modelo de ML treinado no SageMaker Canvas permite:
+- Prever demanda futura de produtos
+- Identificar padrões sazonais de consumo
+- Otimizar níveis de estoque e reduzir desperdícios
 
-## 🤔 Dúvidas?
+## 🔗 Referências
 
-Esperamos que esta experiência tenha sido enriquecedora e que você tenha aprendido mais sobre Machine Learning aplicado a problemas reais. Se tiver alguma dúvida, não hesite em abrir uma issue neste repositório ou entrar em contato com a equipe da DIO.
+- [Documentação SageMaker Canvas](https://docs.aws.amazon.com/sagemaker/latest/dg/canvas.html)
+- [AWS Free Tier](https://aws.amazon.com/free)
+
+## 👩‍💻 Autora
+
+**Andressa Chaves**  
+[![GitHub](https://img.shields.io/badge/GitHub-andressachaves-181717?style=flat&logo=github)](https://github.com/andressachaves)
